@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Precision Building &amp; Maintenance | Builders, Hāwera</title>
+<meta name="description" content="New builds, renovations, heritage and commercial work and property maintenance across South Taranaki. Qualified carpenters based in Hāwera. Call Jared on 027 855 4981.">
+<meta property="og:title" content="Precision Building &amp; Maintenance | Builders, Hāwera">
+<meta property="og:description" content="New builds, renovations and maintenance across South Taranaki, from a Hāwera crew of qualified carpenters.">
+<meta property="og:image" content="https://precision-building-maintenance-ltd-demo.vercel.app/og.jpg">
+<meta property="og:url" content="https://precision-building-maintenance-ltd-demo.vercel.app/">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;0,700;1,700;1,800;1,900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --accent:#4ca8bd;        /* Precision logo teal */
+  --accent-dark:#2f8197;
+  --char:#0f1418;
+  --char-2:#161d22;
+  --char-3:#222b31;
+  --steel:#eef1f2;
+  --ink:#141a1f;
+  --muted:#9fa8b0;
+  --muted-dark:#55606a;
+  --line:rgba(255,255,255,.1);
+  --display:'Exo 2', Arial, sans-serif;
+  --body:'Public Sans', Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.6;color:#e4e6e8;background:var(--char);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block;image-orientation:from-image}
+a{color:var(--accent)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.95;margin:0 0 .45em;font-weight:800;letter-spacing:.01em}
+h2{font-size:clamp(2.4rem,6vw,4.6rem)}
+h3{font-size:1.7rem;font-weight:700}
+p{margin:0 0 1em}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+section{padding:100px 0;position:relative}
+.band-dark{background:var(--char-2)}
+.band-light{background:var(--steel);color:var(--ink)}
+.band-light .muted{color:var(--muted-dark)}
+.muted{color:var(--muted)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-size:1.05rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.band-light .eyebrow{color:#1f6678}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--accent)}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:48px}
+.section-head h2{margin:0;max-width:760px}
+.section-head p{max-width:400px;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;font-family:var(--display);font-size:1.2rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s;cursor:pointer}
+.btn-primary{background:var(--accent);color:#111}
+.btn-primary:hover{background:#fff;transform:translateY(-2px)}
+.btn-ghost{border-color:#fff;color:#fff}
+.btn-ghost:hover{background:#fff;color:#111}
+.btn svg{width:20px;height:20px;flex:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.icon{width:26px;height:26px;flex:none}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;color:#fff;transition:background .3s,box-shadow .3s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:88px;transition:height .3s}
+.nav.scrolled{background:rgba(15,20,24,.96);box-shadow:0 1px 0 var(--line)}
+.nav.scrolled .wrap{height:64px}
+.logo{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.04em;line-height:.9;min-width:0}
+.logo svg{width:40px;height:40px;flex:none}
+.logo .lt{display:flex;flex-direction:column;font-size:1.55rem}
+.logo .lt small{font-size:.72rem;letter-spacing:.32em;color:var(--accent);font-weight:700;margin-top:4px}
+.nav-links{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav-links a{color:#fff;text-decoration:none;font-family:var(--display);font-weight:600;font-size:1.15rem;letter-spacing:.1em;text-transform:uppercase;position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--accent);transition:width .25s}
+.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-call{min-height:46px;padding:8px 18px;font-size:1.1rem}
+.burger{display:none;background:none;border:0;color:#fff;width:46px;height:46px;padding:10px;cursor:pointer}
+@media (max-width:980px){
+  .burger{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--char);padding:8px 20px 24px;border-top:3px solid var(--accent)}
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:14px 0;border-bottom:1px solid var(--line)}
+  .nav-call .label{display:none}
+}
+@media (max-width:420px){.logo .lt{font-size:1.25rem}.logo .lt small{display:none}.logo svg{width:34px;height:34px}.hero .eyebrow{letter-spacing:.12em}}
+
+/* HERO */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:var(--char);overflow:hidden;padding:140px 0 60px}
+.hero-slides{position:absolute;inset:0}
+.hero-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.02);transition:opacity 1.6s ease;filter:saturate(.8) contrast(1.08)}
+.hero-slides img.active{opacity:1;animation:kenburns 8s ease-out forwards}
+.hero.paused .hero-slides img.active{animation-play-state:paused}
+@keyframes kenburns{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.14) translate(-1.5%,-1%)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,20,24,.86) 0%,rgba(15,20,24,.55) 55%,rgba(15,20,24,.35)),linear-gradient(0deg,rgba(15,20,24,.92),transparent 50%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero h1{font-size:clamp(3rem,10vw,8.4rem);margin-bottom:22px}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.04em}
+.hero h1 .line span{display:block}
+.hero h1 .hl{color:var(--accent)}
+.js .hero h1 .line span{transform:translateY(105%);animation:lineUp .9s cubic-bezier(.2,.8,.2,1) forwards}
+.js .hero h1 .line:nth-child(2) span{animation-delay:.15s}
+.js .hero h1 .line:nth-child(3) span{animation-delay:.3s}
+@keyframes lineUp{to{transform:translateY(0)}}
+.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.hero p.lead{font-size:clamp(1.05rem,2vw,1.3rem);color:#dde0e2;max-width:560px;margin:0}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 0}
+.js .hero-fade{opacity:0;animation:fadeIn .8s ease .6s forwards}
+@keyframes fadeIn{to{opacity:1}}
+.rating{display:inline-flex;align-items:center;gap:14px;padding:14px 20px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;text-decoration:none}
+.rating .num{font-family:var(--display);font-size:2.6rem;font-weight:800;line-height:1}
+.stars{color:var(--accent);letter-spacing:2px}
+.rating small{display:block;color:#d3d6d9;font-size:.88rem}
+.hero-controls{display:flex;align-items:center;gap:16px;margin-top:30px}
+.slide-dots{display:flex;gap:8px}
+.slide-dots span{width:40px;height:3px;background:rgba(255,255,255,.3);position:relative;overflow:hidden}
+.slide-dots span.on::after{content:"";position:absolute;inset:0;background:var(--accent);animation:dot 6s linear forwards;transform-origin:left}
+.hero.paused .slide-dots span.on::after{animation:none;transform:scaleX(1)}
+@keyframes dot{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.pause-btn{width:44px;height:44px;display:grid;place-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);color:#fff;cursor:pointer;padding:0}
+.pause-btn:hover{background:var(--accent);color:#111;border-color:var(--accent)}
+.pause-btn svg{width:18px;height:18px}
+
+/* TRUST */
+.trust{padding:0;background:var(--accent);color:#111}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.trust-item{display:flex;gap:14px;align-items:center;padding:26px 24px}
+.trust-item+.trust-item{border-left:2px solid rgba(0,0,0,.15)}
+.trust-item strong{display:block;font-family:var(--display);font-size:1.5rem;text-transform:uppercase;letter-spacing:.03em;line-height:1.1}
+.trust-item span{font-size:.96rem;font-weight:500}
+@media (max-width:800px){.trust-grid{grid-template-columns:1fr}.trust-item+.trust-item{border-left:0;border-top:2px solid rgba(0,0,0,.15)}}
+
+/* SERVICES */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:340px;gap:6px}
+.tile{position:relative;overflow:hidden;color:#fff;text-decoration:none;display:flex;align-items:flex-end;background:var(--char-3)}
+.tile.wide{grid-column:span 2}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8) contrast(1.08);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,20,24,.94) 0%,rgba(15,20,24,.4) 55%,rgba(15,20,24,.15))}
+.tile:hover img{transform:scale(1.08)}
+.tile-body{position:relative;z-index:2;padding:28px}
+.tile .num{font-family:var(--display);font-weight:700;color:var(--accent);letter-spacing:.15em;font-size:1.05rem;text-shadow:0 1px 8px rgba(0,0,0,.85)}
+.tile h3{font-size:2.15rem;margin:4px 0 6px}
+.tile p{margin:0;color:#d6d9dc;max-width:440px;font-size:.98rem}
+.stock-note{margin-top:18px;font-size:.85rem}
+@media (max-width:900px){.tiles{grid-template-columns:1fr 1fr;grid-auto-rows:300px}.tile.wide{grid-column:span 2}}
+@media (max-width:600px){.tiles{grid-template-columns:1fr;grid-auto-rows:280px}.tile.wide{grid-column:auto}}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.85) contrast(1.06)}
+.corner-tag{position:absolute;left:-1px;bottom:-1px;background:var(--accent);color:#111;padding:16px 20px;font-family:var(--display);font-weight:800;font-size:1.25rem;text-transform:uppercase;letter-spacing:.06em;line-height:1.1}
+.checklist{list-style:none;padding:0;margin:26px 0 0}
+.checklist li{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.12);font-weight:600;font-size:1.05rem}
+.checklist .icon{color:#fff;background:var(--ink);padding:4px;width:28px;height:28px}
+.job-list{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.job-list li{font-size:.9rem;font-weight:600;padding:6px 12px;border:1px solid rgba(0,0,0,.2)}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px}.about-img img{aspect-ratio:4/3;object-position:center 70%}}
+
+/* PARALLAX */
+.parallax{padding:0;height:540px;overflow:hidden;display:flex;align-items:center;color:#fff}
+.parallax .bg{position:absolute;left:0;right:0;top:-20%;height:140%;background:url('img/job-10-1920.webp') center/cover no-repeat;filter:saturate(.7) contrast(1.1);will-change:transform}
+.parallax::after{content:"";position:absolute;inset:0;background:rgba(15,20,24,.66)}
+.parallax .wrap{position:relative;z-index:2;width:100%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.stat .n{font-family:var(--display);font-weight:800;font-size:clamp(3.6rem,9vw,7rem);line-height:.9;color:#fff}
+.stat .n em{font-style:normal;color:var(--accent)}
+.stat p{font-family:var(--display);text-transform:uppercase;letter-spacing:.12em;font-size:1.15rem;color:#ddd;margin:8px 0 0}
+@media (max-width:700px){.parallax{height:auto;padding:90px 0}.stats{grid-template-columns:1fr;gap:34px}}
+
+/* TEAM */
+.owner{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;background:#fff;padding:44px 40px;border-top:4px solid var(--accent)}
+.avatar{width:110px;height:110px;background:var(--char);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:3rem;font-weight:800;box-shadow:8px 8px 0 var(--accent)}
+.owner h3{color:var(--ink);font-size:2.2rem;margin-bottom:4px}
+.owner .role{font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;color:#1f6678;font-weight:700;margin-bottom:12px;display:block}
+.owner p{margin:0;color:var(--muted-dark);max-width:720px}
+@media (max-width:640px){.owner{grid-template-columns:1fr;padding:34px 24px;gap:24px}}
+
+/* REVIEWS */
+.reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
+.review{background:var(--char-3);padding:34px 30px;display:flex;flex-direction:column;gap:14px;position:relative}
+.review::before{content:"\201C";position:absolute;right:24px;top:0;font-family:var(--display);font-size:7rem;line-height:1;color:var(--accent);opacity:.25}
+.review p{margin:0;flex:1;font-size:1.05rem}
+.review footer{font-size:.92rem;color:var(--muted)}
+.review footer strong{color:#fff;display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:1.15rem}
+.center{margin-top:36px;display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.center small{color:var(--muted)}
+@media (max-width:900px){.reviews-grid{grid-template-columns:1fr}}
+
+/* LEAVE A REVIEW */
+.review-banner{background:var(--accent);color:#111;padding:60px 0}
+.review-banner .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.review-banner h2{margin:0;font-size:clamp(2rem,5vw,3.4rem)}
+.review-banner p{margin:6px 0 0;font-weight:500}
+.review-banner .btn{background:#111;color:#fff}
+.review-banner .btn:hover{background:#fff;color:#111}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px}
+.faq-list details{border-bottom:1px solid rgba(0,0,0,.15)}
+.faq-list details:first-child{border-top:1px solid rgba(0,0,0,.15)}
+.faq-list summary{list-style:none;cursor:pointer;padding:22px 50px 22px 0;font-family:var(--display);font-size:1.5rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;position:relative;min-height:44px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"";position:absolute;right:6px;top:50%;width:16px;height:16px;border-right:3px solid var(--accent-dark);border-bottom:3px solid var(--accent-dark);transform:translateY(-70%) rotate(45deg);transition:transform .3s}
+.faq-list details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq-list details p{padding:0 0 22px;margin:0;color:var(--muted-dark)}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr;gap:20px}}
+
+/* CONTACT */
+.contact{background:var(--char)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact-rows{list-style:none;padding:0;margin:28px 0}
+.contact-rows li{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+.contact-rows .icon{color:var(--accent)}
+.contact-rows a{color:#fff;text-decoration:none;overflow-wrap:anywhere}
+.contact-rows span{overflow-wrap:anywhere;min-width:0}
+.contact-actions{display:flex;flex-direction:column;gap:10px}
+.contact-actions .btn{min-height:96px;font-size:1.6rem;justify-content:space-between;padding:20px 30px}
+.contact-actions .btn svg{width:30px;height:30px}
+.socials{display:flex;gap:8px}
+.socials a{width:46px;height:46px;display:grid;place-items:center;background:var(--char-3);color:#fff;transition:background .2s,color .2s}
+.socials a:hover{background:var(--accent);color:#111}
+.socials svg{width:20px;height:20px}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr;gap:40px}.contact-actions .btn{min-height:80px;font-size:1.3rem}}
+
+/* MAP */
+.map{padding:0;background:var(--char)}
+.map iframe{width:100%;height:440px;border:0;display:block;filter:grayscale(.6) contrast(1.05)}
+
+/* FOOTER */
+.footer{background:#0d1114;color:#8b9399;padding:40px 0;font-size:.95rem;border-top:3px solid var(--accent)}
+.footer .wrap{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:center}
+.footer a{color:#cfd3d6;text-decoration:none}
+.footer a:hover{color:var(--accent)}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+
+/* REVEALS */
+.js .reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .wipe>img{clip-path:inset(0 100% 0 0);transition:clip-path 1.1s cubic-bezier(.77,0,.18,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .wipe-up>img{clip-path:inset(100% 0 0 0);transition:clip-path 1s cubic-bezier(.77,0,.18,1),transform .7s ease}
+.js .wipe.in>img,.js .wipe-up.in>img{clip-path:inset(0 0 0 0)}
+
+@media (max-width:600px){section{padding:70px 0}.map iframe{height:320px}.section-head{margin-bottom:34px}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+  .js .wipe>img,.js .wipe-up>img{clip-path:none}
+  .js .hero h1 .line span{transform:none}
+  .js .hero-fade{opacity:1}
+  .hero-slides img.active{transform:none}
+  .parallax .bg{transform:none!important}
+}
+h1,h2,h3{font-style:italic;letter-spacing:-.005em}
+h1{font-weight:900}
+.hero h1{font-size:clamp(2.7rem,7.4vw,6.4rem)}
+@media (max-width:480px){.hero h1{font-size:2.45rem}.hero .eyebrow{letter-spacing:.12em;font-size:.95rem}}
+.logo img{height:52px;width:auto}
+.nav.scrolled .logo img{height:42px}
+@media (max-width:420px){.logo img{height:40px}}
+.masonry{column-count:3;column-gap:8px}
+.masonry figure{margin:0 0 8px;break-inside:avoid;position:relative;overflow:hidden;background:var(--char-3)}
+.masonry img{width:100%;height:auto;display:block;filter:saturate(.85) contrast(1.06);transition:transform .7s ease}
+.masonry figure:hover img{transform:scale(1.05)}
+.masonry figcaption{position:absolute;left:0;bottom:0;padding:10px 14px;background:rgba(15,20,24,.88);font-family:var(--display);font-style:italic;text-transform:uppercase;letter-spacing:.06em;font-size:.95rem;color:#fff}
+.masonry figcaption b{color:var(--accent);font-weight:700}
+@media (max-width:900px){.masonry{column-count:2}}
+@media (max-width:520px){.masonry{column-count:1}}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.team-card{background:#fff;padding:36px 28px;border-top:4px solid var(--accent)}
+.team-card .avatar{width:84px;height:84px;font-size:2rem;margin-bottom:20px;box-shadow:6px 6px 0 var(--accent)}
+.team-card h3{color:var(--ink);margin-bottom:4px}
+.team-card .role{font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;color:#1f6678;font-weight:700;margin-bottom:10px;display:block;font-size:.9rem}
+.team-card p{margin:0;color:var(--muted-dark)}
+@media (max-width:800px){.team-grid{grid-template-columns:1fr}}
+.review .job{font-family:var(--display);font-style:italic;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);font-size:.95rem;font-weight:700}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+  <symbol id="i-square" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21 21 3"/><path d="M3 21h18M3 21V3"/><path d="M7 21v-2M11 21v-2M15 21v-2M3 17h2M3 13h2M3 9h2"/></symbol>
+  <symbol id="i-build" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-5h6v5M9 12h6"/></symbol>
+  <symbol id="i-pin2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><path d="M9 10h6M12 7v6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.5V12h2.8v10H14V12h2.8l.4-3.5z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.3 6.3 0 1 0 5.4 6.3V8.6a8 8 0 0 0 4.6 1.5V6.7a4.7 4.7 0 0 1-4.6-4.7z"/></symbol>
+</svg>
+
+<!-- 1. NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Precision Building and Maintenance home">
+      <img src="img/logo.png" alt="Precision Building &amp; Maintenance" width="1108" height="283">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#jobs">Recent jobs</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-primary nav-call" href="tel:+64278554981" aria-label="Call 027 855 4981"><svg class="icon"><use href="#i-phone"/></svg><span class="label">027 855 4981</span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 2. HERO -->
+<section class="hero" id="hero" aria-label="Introduction">
+  <div class="hero-slides" id="heroSlides">
+    <img class="active" src="img/hero-fb14-1920.webp" srcset="img/hero-fb14-1080.webp 1080w, img/hero-fb14-1920.webp 1920w, img/hero-fb14-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1280" fetchpriority="high">
+    <img src="img/hero-fb08-1920.webp" srcset="img/hero-fb08-1080.webp 1080w, img/hero-fb08-1920.webp 1920w, img/hero-fb08-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1280" loading="lazy">
+    <img src="img/hero-worker-1920.webp" srcset="img/hero-worker-1080.webp 1080w, img/hero-worker-1920.webp 1920w, img/hero-worker-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1280" loading="lazy">
+  </div>
+  <div class="wrap">
+    <span class="eyebrow hero-fade">Hāwera · South Taranaki</span>
+    <h1>
+      <span class="line"><span>Builds, renos</span></span>
+      <span class="line"><span>and restorations</span></span>
+      <span class="line"><span class="hl">in South Taranaki.</span></span>
+    </h1>
+    <div class="hero-bottom hero-fade">
+      <div>
+        <p class="lead">New builds, renovations, heritage verandahs and the maintenance jobs in between. A Hāwera crew of qualified carpenters, run by Jared Coombes.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tel:+64278554981"><svg class="icon"><use href="#i-phone"/></svg>Call 027 855 4981</a>
+          <a class="btn btn-ghost" href="#contact">Get a quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <a class="rating" href="https://www.google.com/maps?cid=1288275868941844196" target="_blank" rel="noopener" aria-label="Rated 5.0 out of 5 on Google. Opens Google listing">
+        <span class="num">5.0</span>
+        <div><span class="stars" aria-hidden="true">★★★★★</span><small>Rated 5 stars on Google</small></div>
+      </a>
+    </div>
+    <div class="hero-controls hero-fade">
+      <button class="pause-btn" id="pauseBtn" type="button" aria-pressed="false" aria-label="Pause slideshow"><svg id="pauseIcon"><use href="#i-pause"/></svg></button>
+      <div class="slide-dots" id="dots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. TRUST STRIP -->
+<section class="trust" aria-label="Why choose us">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><svg class="icon"><use href="#i-pin2"/></svg><div><strong>Hāwera based</strong><span>Working across South Taranaki, Stratford, New Plymouth and Whanganui.</span></div></div>
+    <div class="trust-item"><svg class="icon"><use href="#i-square"/></svg><div><strong>Qualified carpenters</strong><span>Three qualified chippies and an apprentice on the tools.</span></div></div>
+    <div class="trust-item"><svg class="icon"><use href="#i-build"/></svg><div><strong>Big jobs and small</strong><span>New builds right through to a leaking gutter.</span></div></div>
+  </div>
+</section>
+
+<!-- 4. SERVICES -->
+<section id="services" class="band-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">What we do</span><h2 class="reveal">From the slab to the spouting</h2></div>
+      <p class="muted reveal">Renovations and new builds are the bread and butter. Maintenance keeps your place up to scratch in between.</p>
+    </div>
+    <div class="tiles">
+      <a href="#contact" class="tile wide wipe"><img src="img/frame1-1920.webp" srcset="img/frame1-1080.webp 1080w, img/frame1-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Timber framing going up on a new build" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">01</span><h3>New builds &amp; extensions</h3><p>Homes, extensions, sheds and outbuildings, with help through planning and consent.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/reno2-1920.webp" srcset="img/reno2-1080.webp 1080w, img/reno2-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="House interior stripped back for renovation" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">02</span><h3>Renovations</h3><p>Alterations, plastering, new floors and rooms brought back to life.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/job-07-1920.webp" srcset="img/job-07-1080.webp 810w, img/job-07-1920.webp 1440w" sizes="(max-width:600px) 100vw, 33vw" alt="Verandah roof framing on a heritage building in Hāwera, by Precision Building" width="1440" height="1920" loading="lazy"><div class="tile-body"><span class="num">03</span><h3>Heritage &amp; commercial</h3><p>Verandahs, shopfronts and fit-outs, like the main street job in Hāwera.</p></div></a>
+      <a href="#contact" class="tile wide wipe"><img src="img/bath-1920.webp" srcset="img/bath-1080.webp 1080w, img/bath-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Renovated bathroom with green vanity" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">04</span><h3>Kitchens &amp; bathrooms</h3><p>Bathroom renos, kitchens and cabinetry, done start to finish.</p></div></a>
+      <a href="#contact" class="tile wide wipe"><img src="img/membrane-1920.webp" srcset="img/membrane-1080.webp 1080w, img/membrane-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Timber framing wrapped in building membrane" width="1920" height="1081" loading="lazy"><div class="tile-body"><span class="num">05</span><h3>Doors, windows &amp; cladding</h3><p>Entrance and French doors, window sills, skylights and cladding leaks fixed before the rot sets in.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/gutter-1920.webp" srcset="img/gutter-1080.webp 1080w, img/gutter-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Roof edge and spouting" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">06</span><h3>Maintenance &amp; reports</h3><p>Spouting, fences, gates and repairs, plus building reports when you're buying.</p></div></a>
+    </div>
+    <p class="muted stock-note reveal">Tile 03 is Precision's own job. The other service photos are stock images for this demo.</p>
+  </div>
+</section>
+
+<!-- 5. ABOUT -->
+<section id="about" class="band-light">
+  <div class="wrap about-grid">
+    <div class="about-img wipe-up">
+      <img src="img/job-11-1920.webp" srcset="img/job-11-1080.webp 1080w, img/job-11-1920.webp 1920w" sizes="(max-width:860px) 100vw, 45vw" alt="The Precision Building and Maintenance team in front of their branded vans" width="1920" height="1440" loading="lazy" style="aspect-ratio:4/3">
+      <div class="corner-tag">The Precision<br>crew</div>
+    </div>
+    <div>
+      <span class="eyebrow reveal">About us</span>
+      <h2 class="reveal">A Hāwera crew that takes pride in the finish</h2>
+      <p class="muted reveal">Precision Building &amp; Maintenance is based in Hāwera, with three qualified carpenters and a second-year apprentice who have 35 years of experience between them. Renovations and new builds are what they specialise in, and they look after property maintenance too, so your place stays up to scratch.</p>
+      <p class="muted reveal">Lately that has meant reinstating a heritage verandah on Hāwera's main street and building the new community core boards for Hāwera's parks.</p>
+      <ul class="checklist reveal">
+        <li><svg class="icon"><use href="#i-check"/></svg>Locally owned, based on Dives Avenue</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Qualified carpenters on every job</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Renovations, new builds and maintenance</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX STATS -->
+<section class="parallax" aria-label="By the numbers">
+  <div class="bg" id="parallaxBg"></div>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><div class="n"><span data-count="35">35</span><em>yrs</em></div><p>Combined experience</p></div>
+      <div class="stat reveal"><div class="n"><span data-count="3">3</span></div><p>Qualified carpenters</p></div>
+      <div class="stat reveal"><div class="n">5.0<em>★</em></div><p>Google rating</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RECENT JOBS -->
+<section id="jobs" class="band-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Recent jobs</span><h2 class="reveal">Around Hāwera lately</h2></div>
+      <p class="muted reveal">Straight from the Precision Facebook and Instagram pages.</p>
+    </div>
+    <div class="masonry">
+      <figure class="wipe-up"><img src="img/job-14-1920.webp" srcset="img/job-14-1080.webp 810w, img/job-14-1920.webp 1440w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Heritage corner building on Hāwera's main street with its verandah reinstated" width="1440" height="1920" loading="lazy"><figcaption><b>Hāwera</b> · Main street verandah</figcaption></figure>
+      <figure class="wipe-up"><img src="img/job-03-1920.webp" srcset="img/job-03-1080.webp 1080w, img/job-03-1920.webp 1920w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Community core board in a Hāwera park" width="1920" height="1440" loading="lazy"><figcaption><b>Hāwera</b> · Park core board</figcaption></figure>
+      <figure class="wipe-up"><img src="img/job-10-1920.webp" srcset="img/job-10-1080.webp 810w, img/job-10-1920.webp 1440w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Precision Building hoardings around the verandah work" width="1440" height="1920" loading="lazy"><figcaption><b>Hāwera</b> · Behind the hoardings</figcaption></figure>
+      <figure class="wipe-up"><img src="img/job-08-1920.webp" srcset="img/job-08-1080.webp 810w, img/job-08-1920.webp 1440w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Long cast-iron style verandah along a Hāwera main street building" width="1440" height="1920" loading="lazy"><figcaption><b>Hāwera</b> · Verandah finished</figcaption></figure>
+      <figure class="wipe-up"><img src="img/job-05-1920.webp" srcset="img/job-05-1080.webp 810w, img/job-05-1920.webp 1440w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Timber-framed community core board installed in garden beds" width="1440" height="1920" loading="lazy"><figcaption><b>Hāwera</b> · Core board install</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 6. TEAM -->
+<section id="team" class="band-light">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">The crew</span><h2 class="reveal">Who's on the tools</h2></div>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal"><div class="avatar" aria-hidden="true">JC</div><h3>Jared Coombes</h3><span class="role">Owner / builder</span><p>Comes out to quote, runs the job and is the one you deal with from start to finish.</p></div>
+      <div class="team-card reveal"><div class="avatar" aria-hidden="true">x3</div><h3>Qualified carpenters</h3><span class="role">The core crew</span><p>Three qualified chippies, so the work is done properly the first time.</p></div>
+      <div class="team-card reveal"><div class="avatar" aria-hidden="true">AP</div><h3>Apprentice</h3><span class="role">Second year</span><p>Learning the trade on real jobs, alongside the qualified team.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. REVIEWS -->
+<section id="reviews" class="band-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Reviews</span><h2 class="reveal">What customers say</h2></div>
+      <p class="muted reveal">Rated 5.0 on Google. These verified reviews are from Precision's Builderscrack profile.</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Absolutely wonderful, would recommend him to anyone wanting renovations/repairs. The job was complicated and the sills needed to be machined by another business, this was done without any hassle and the whole process was extremely simple for me and the job was excellent ..."</p><footer><strong class="job">Window sills replacement</strong>New Plymouth · February 2024 · Builderscrack</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Fantastic team! Great communication and keep us informed the whole step of the way. Will be our builder of choice from now on."</p><footer><strong class="job">Water damaged floor replaced</strong>Inglewood · March 2024 · Builderscrack</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Overall, the work was done to a very high standard, and pretty happy with all aspects of the job, price was good too."</p><footer><strong class="job">New entrance door</strong>Stratford · December 2023 · Builderscrack</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Jared was great to communicate with, and friendly and professional when he came to our house to do a quote."</p><footer><strong class="job">Spouting repair</strong>Hāwera · August 2025 · Builderscrack</footer></article>
+    </div>
+    <div class="center reveal"><a class="btn btn-ghost" href="https://www.google.com/maps?cid=1288275868941844196" target="_blank" rel="noopener">See our Google reviews <svg class="icon"><use href="#i-arrow"/></svg></a><a class="btn btn-ghost" href="https://builderscrack.co.nz/tradies/4bqhll5o/precision-building-and-maintenance-ltd" target="_blank" rel="noopener">More on Builderscrack</a><small>Excerpts marked with ... are shortened.</small></div>
+  </div>
+</section>
+
+<!-- 8. LEAVE A REVIEW -->
+<section class="review-banner" aria-label="Leave a review">
+  <div class="wrap">
+    <div><h2>Happy with our work? Leave us a review</h2><p>It helps other South Taranaki homeowners find a builder they can trust.</p></div>
+    <a class="btn" href="https://www.google.com/maps?cid=1288275868941844196" target="_blank" rel="noopener">Review us on Google</a>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section id="faq" class="band-light">
+  <div class="wrap faq-grid">
+    <div><span class="eyebrow reveal">FAQ</span><h2 class="reveal">Before you call</h2><p class="muted reveal">Anything else, ring Jared on 027 855 4981.</p></div>
+    <div class="faq-list reveal">
+      <details><summary>What areas do you cover?</summary><p>The team is based on Dives Avenue in Hāwera and works across South Taranaki, Stratford, New Plymouth and Whanganui. Further out? Give Jared a call and ask.</p></details>
+      <details><summary>Do you take on small jobs?</summary><p>Yes. Alongside new builds and renovations they do property maintenance: spouting, doors, window sills, fences, gates and repairs.</p></details>
+      <details><summary>Can you help with planning and consent?</summary><p>Planning and consent is one of the services Precision offers. Talk it through with Jared when you call and he'll explain what your job needs.</p></details>
+      <details><summary>Do you do building reports?</summary><p>Yes, building reports and inspections are on the list, handy when you're buying a house. Call to talk about timing and what you need covered.</p></details>
+      <details><summary>How do I get a quote?</summary><p>Call or email with your address, what you'd like done and a few photos. Jared will come out to have a look and talk you through it.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow reveal">Contact</span>
+      <h2 class="reveal">Got a project in mind?</h2>
+      <p class="muted reveal">Call Jared for a quote, or email the details and a few photos.</p>
+      <ul class="contact-rows reveal">
+        <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+64278554981">027 855 4981</a></li>
+        <li><svg class="icon"><use href="#i-mail"/></svg><span id="emailText">Email us using the button</span></li>
+        <li><svg class="icon"><use href="#i-pin"/></svg><span>49 Dives Avenue, Hāwera 4610</span></li>
+      </ul>
+      <div class="socials reveal">
+        <a href="https://www.facebook.com/p/Precision-Building-Maintenance-LTD-100094355536779/" target="_blank" rel="noopener" aria-label="Precision Building on Facebook"><svg><use href="#i-fb"/></svg></a>
+        <a href="https://www.instagram.com/precision.building.maintenance/" target="_blank" rel="noopener" aria-label="Precision Building on Instagram"><svg><use href="#i-ig"/></svg></a>
+        <a href="https://www.tiktok.com/search?q=Precision%20Building%20%26%20Maintenance%20Hawera" target="_blank" rel="noopener" aria-label="Search TikTok for Precision Building and Maintenance"><svg><use href="#i-tt"/></svg></a>
+      </div>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn-primary reveal" href="tel:+64278554981">Call for a quote <svg class="icon"><use href="#i-phone"/></svg></a>
+      <a class="btn btn-ghost reveal" href="#" data-gmail data-user="precision-building" data-domain="outlook.com" data-su="Building%20enquiry" data-body="Hi%20Jared%2C%0A%0AI'd%20like%20a%20quote%20for%3A%0A%0AAddress%3A%0A%0AThanks">Email us about your project <svg class="icon"><use href="#i-mail"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 11. MAP -->
+<section class="map" aria-label="Map">
+  <iframe title="Map to Precision Building and Maintenance, 49 Dives Avenue, Hāwera" src="https://www.google.com/maps?q=Precision+Building+%26+Maintenance+LTD,+49+Dives+Avenue,+H%C4%81wera+4610&ll=-39.5966327,174.2776276&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+</main>
+
+<!-- 12. FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Precision Building &amp; Maintenance LTD · Hāwera, South Taranaki</span>
+    <div class="footer-links">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://www.google.com/maps?cid=1288275868941844196" target="_blank" rel="noopener">Leave a review</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.facebook.com/p/Precision-Building-Maintenance-LTD-100094355536779/" target="_blank" rel="noopener" aria-label="Precision Building on Facebook"><svg><use href="#i-fb"/></svg></a>
+      <a href="https://www.instagram.com/precision.building.maintenance/" target="_blank" rel="noopener" aria-label="Precision Building on Instagram"><svg><use href="#i-ig"/></svg></a>
+      <a href="https://www.tiktok.com/search?q=Precision%20Building%20%26%20Maintenance%20Hawera" target="_blank" rel="noopener" aria-label="Search TikTok for Precision Building and Maintenance"><svg><use href="#i-tt"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+var burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+burger.addEventListener('click',function(){var o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Close menu':'Open menu');});
+links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Open menu');});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&links.classList.contains('open')){links.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.focus();}});
+
+var nav=document.getElementById('nav'),pbg=document.getElementById('parallaxBg'),ticking=false;
+function onScroll(){
+  nav.classList.toggle('scrolled',window.scrollY>40);
+  if(!reduce&&pbg){var r=pbg.parentElement.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){pbg.style.transform='translate3d(0,'+((r.top-innerHeight/2)*-0.18)+'px,0)';}}
+  ticking=false;
+}
+window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(onScroll);ticking=true;}},{passive:true});
+onScroll();
+
+// Hero slideshow with pause/play (starts paused under reduced motion)
+var hero=document.getElementById('hero'),slides=document.querySelectorAll('#heroSlides img'),dots=document.querySelectorAll('#dots span'),cur=0,timer=null;
+var pauseBtn=document.getElementById('pauseBtn'),pauseIcon=document.getElementById('pauseIcon').querySelector('use');
+function next(){
+  slides[cur].classList.remove('active');dots[cur].classList.remove('on');
+  cur=(cur+1)%slides.length;
+  void slides[cur].offsetWidth;
+  slides[cur].classList.add('active');dots[cur].classList.add('on');
+}
+function play(){if(timer||slides.length<2)return;timer=setInterval(next,6000);hero.classList.remove('paused');pauseBtn.setAttribute('aria-pressed','false');pauseBtn.setAttribute('aria-label','Pause slideshow');pauseIcon.setAttribute('href','#i-pause');}
+function pause(){clearInterval(timer);timer=null;hero.classList.add('paused');pauseBtn.setAttribute('aria-pressed','true');pauseBtn.setAttribute('aria-label','Play slideshow');pauseIcon.setAttribute('href','#i-play');}
+pauseBtn.addEventListener('click',function(){timer?pause():play();});
+if(reduce){pause();}else{play();}
+
+function countUp(el){
+  var end=+el.getAttribute('data-count');
+  if(reduce||end<5){el.textContent=end;return;}
+  var t0=null;
+  function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/1600,1);el.textContent=Math.round(end*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step);}
+  requestAnimationFrame(step);
+}
+
+var targets=document.querySelectorAll('.reveal,.wipe,.wipe-up');
+if('IntersectionObserver' in window&&!reduce){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target,sibs=Array.prototype.filter.call(el.parentElement.children,function(c){return c.matches('.reveal,.wipe,.wipe-up');});
+      var d=(Math.max(0,sibs.indexOf(el))*0.1)+'s',img=el.querySelector(':scope>img');
+      if(img){img.style.transitionDelay=d+',0s';img.addEventListener('transitionend',function(){img.style.transitionDelay='';},{once:true});}
+      else{el.style.transitionDelay=d;}
+      el.classList.add('in');
+      el.querySelectorAll('[data-count]').forEach(countUp);
+      io.unobserve(el);
+    });
+  },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  targets.forEach(function(el){io.observe(el);});
+}else{
+  targets.forEach(function(el){el.classList.add('in');});
+}
+
+document.querySelectorAll('a[data-gmail]').forEach(function(a){var to=a.getAttribute('data-user')+'@'+a.getAttribute('data-domain');a.href='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(to)+'&su='+(a.getAttribute('data-su')||'')+'&body='+(a.getAttribute('data-body')||'');a.target='_blank';a.rel='noopener';});
+var et=document.getElementById('emailText');if(et)et.innerHTML='precision-building<wbr>'+'@'+'outlook.com';
+
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
